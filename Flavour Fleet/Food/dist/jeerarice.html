@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <div class="card-container">
+        <div>
+            <!-- BACKGROUND DIV -->
+            <div class="card-image" style="background-image:url(../items/jeera_rice.jpg);"></div>
+            <!-- buttons and text -->
+            <div class="card-content">
+                <p class="card-title">Jeera Rice (Cumin Rice) - fragrant flavour</p>
+                <!-- pricing div -->
+                <div class="price">
+                    <p class="price-text">₹399</p>
+                </div>
+                <p class="description">
+                    Basmati rice cooked with cumin seeds and other 
+                    whole spices, adding a subtle aromatic flavor.
+                </p>
+
+                <!-- buttons -->
+                <main class="main">
+                <form action="add_to_cart.php" method="POST" class="add-to-cart-form">
+                    <input type="hidden" name="item_id" value="17"> 
+                    <input type="hidden" name="item_name" value="Jeera Rice">
+                    <input type="hidden" name="item_price" value="399">
+                    <input type="hidden" name="item_image" value="\Restaurant Management\Flavour Fleet\Food\items\jeera_rice.jpg">
+                    <button type="submit" class="order-button">Add To Cart</button>
+                </form>
+                <div id="toast" class="toast hidden">Item added to cart!</div>
+            </main>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

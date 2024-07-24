@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <div class="card-container">
+        <div>
+            <!-- BACKGROUND DIV -->
+            <div class="card-image" style="background-image:url(../items/masala_chai.jpg);"></div>
+            <!-- buttons and text -->
+            <div class="card-content">
+                <p class="card-title">Masala Chai - spiced comfort in a cup</p>
+                <!-- pricing div -->
+                <div class="price">
+                    <p class="price-text">₹49</p>
+                </div>
+                <p class="description">
+                    A traditional Indian spiced tea made with black tea leaves,
+                    milk, sugar, and a blend of aromatic spices such as cardamom, cinnamon,
+                    cloves, and ginger.
+                </p>
+                <!-- buttons -->
+                <main class="main">
+                <form action="add_to_cart.php" method="POST" class="add-to-cart-form">
+                    <input type="hidden" name="item_id" value="38"> 
+                    <input type="hidden" name="item_name" value="Masala Chai">
+                    <input type="hidden" name="item_price" value="49">
+                    <input type="hidden" name="item_image" value="\Restaurant Management\Flavour Fleet\Food\items\masala_chai.jpg">
+                    <button type="submit" class="order-button">Add To Cart</button>
+                </form>
+                <div id="toast" class="toast hidden">Item added to cart!</div>
+            </main>
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

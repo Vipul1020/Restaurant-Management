@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <div class="card-container">
+        <div>
+            <!-- BACKGROUND DIV -->
+            <div class="card-image" style="background-image:url(../items/IdlieSambar.jpg);"></div>
+            <!-- buttons and text -->
+            <div class="card-content">
+                <p class="card-title">Idlie Sambar - comfort in every bite</p>
+                <!-- pricing div -->
+                <div class="price">
+                    <p class="price-text">₹199</p>
+                </div>
+                <p class="description">
+                    Soft and fluffy steamed rice cakes made from fermented rice
+                    and lentil batter, served with a spicy and tangy lentil soup called sambar.
+                </p>
+                <!-- buttons -->
+                <main class="main">
+                <form action="add_to_cart.php" method="POST" class="add-to-cart-form">
+                    <input type="hidden" name="item_id" value="1"> <!-- Replace with actual item ID -->
+                    <input type="hidden" name="item_name" value="Idli Sambar">
+                    <input type="hidden" name="item_price" value="199">
+                    <input type="hidden" name="item_image" value="\Restaurant Management\Flavour Fleet\Food\items\IdlieSambar.jpg">
+                    <button type="submit" class="order-button">Add To Cart</button>
+                </form>
+                <div id="toast" class="toast hidden">Item added to cart!</div>
+            </main>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

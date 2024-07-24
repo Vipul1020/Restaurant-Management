@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <div class="card-container">
+        <div>
+            <!-- BACKGROUND DIV -->
+            <div class="card-image" style="background-image:url(../items/darjeeling_tea.jpeg);"></div>
+            <!-- buttons and text -->
+            <div class="card-content">
+                <p class="card-title">Darjeeling Tea - exquisite flavour from the</p>
+                <!-- pricing div -->
+                <div class="price">
+                    <p class="price-text">₹129</p>
+                </div>
+                <p class="description">
+                    A fragrant and delicate black tea from the Darjeeling region
+                    of India, known for its floral aroma and muscatel flavor.
+                </p>
+                <!-- buttons -->
+                <main class="main">
+                <form action="add_to_cart.php" method="POST" class="add-to-cart-form">
+                    <input type="hidden" name="item_id" value="39"> 
+                    <input type="hidden" name="item_name" value="Darjeeling Tea">
+                    <input type="hidden" name="item_price" value="129">
+                    <input type="hidden" name="item_image" value="\Restaurant Management\Flavour Fleet\Food\items\darjeeling_tea.jpg">
+                    <button type="submit" class="order-button">Add To Cart</button>
+                </form>
+                <div id="toast" class="toast hidden">Item added to cart!</div>
+            </main>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

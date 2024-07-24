@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <div class="card-container">
+        <div>
+            <!-- BACKGROUND DIV -->
+            <div class="card-image" style="background-image:url(../items/Dosa.jpg);"></div>
+            <!-- buttons and text -->
+            <div class="card-content">
+                <p class="card-title">Dosa - crispy , savory satisfaction</p>
+                <!-- pricing div -->
+                <div class="price">
+                    <p class="price-text">₹249</p>
+                </div>
+                <p class="description">
+                    Thin and crispy crepes made from a fermented batter of ground rice and lentils.
+                    You have options such as masala Dosa ,plain dosa,onion dosa and cheese dosa.
+                    It will be served with sambar and chutney.
+                </p>
+                <!-- buttons -->
+                <main class="main">
+                <form action="add_to_cart.php" method="POST" class="add-to-cart-form">
+                    <input type="hidden" name="item_id" value="4"> 
+                    <input type="hidden" name="item_name" value="Dosa">
+                    <input type="hidden" name="item_price" value="249">
+                    <input type="hidden" name="item_image" value="\Restaurant Management\Flavour Fleet\Food\items\Dosa.jpg">
+                    <button type="submit" class="order-button">Add To Cart</button>
+                </form>
+                <div id="toast" class="toast hidden">Item added to cart!</div>
+            </main>
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <div class="card-container">
+        <div>
+            <!-- BACKGROUND DIV -->
+            <div class="card-image" style="background-image:url(../items/fresh_lime_soda.jpg);"></div>
+            <!-- buttons and text -->
+            <div class="card-content">
+                <p class="card-title">Fresh Lime Soda - zesty refreshment</p>
+                <!-- pricing div -->
+                <div class="price">
+                    <p class="price-text">₹129</p>
+                </div>
+                <p class="description">
+                    A simple and refreshing drink made with freshly squeezed 
+                    lime juice, sugar syrup, and soda water, served with ice.
+                </p>
+
+                <!-- buttons -->
+                <main class="main">
+                <form action="add_to_cart.php" method="POST" class="add-to-cart-form">
+                    <input type="hidden" name="item_id" value="37"> 
+                    <input type="hidden" name="item_name" value="Fresh Lime Soda">
+                    <input type="hidden" name="item_price" value="129">
+                    <input type="hidden" name="item_image" value="\Restaurant Management\Flavour Fleet\Food\items\fresh_lime_soda.jpg">
+                    <button type="submit" class="order-button">Add To Cart</button>
+                </form>
+                <div id="toast" class="toast hidden">Item added to cart!</div>
+            </main>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

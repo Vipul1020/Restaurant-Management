@@ -1,0 +1,6 @@
+/* Light theme overrides */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    /* Override other variables if needed */
+}

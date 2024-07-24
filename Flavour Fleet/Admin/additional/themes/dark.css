@@ -1,0 +1,6 @@
+/* Dark theme overrides */
+:root {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    /* Override other variables if needed */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body">
+    <div class="card-container">
+        <div>
+            <!-- BACKGROUND DIV -->
+            <div class="card-image" style="background-image:url(../items/paneer_tikka_masala.jpeg);"></div>
+            <!-- buttons and text -->
+            <div class="card-content">
+                <p class="card-title">Paneer Tikka Masala - marvelous</p>
+                <!-- pricing div -->
+                <div class="price">
+                    <p class="price-text">₹799</p>
+                </div>
+                <p class="description">
+                    Succulent cubes of paneer marinated in yogurt and 
+                    spices, grilled , and simmered in a rich and creamy tomato-based masala sauce, flavored
+                    with fenugreek leaves and garnished with fresh cilantro.
+                </p>
+
+                <!-- buttons -->
+                <main class="main">
+                <form action="add_to_cart.php" method="POST" class="add-to-cart-form">
+                    <input type="hidden" name="item_id" value="9"> 
+                    <input type="hidden" name="item_name" value="Paneer Tikka Masala">
+                    <input type="hidden" name="item_price" value="799">
+                    <input type="hidden" name="item_image" value="\Restaurant Management\Flavour Fleet\Food\items\paneer_tikka_masala.jpeg">
+                    <button type="submit" class="order-button">Add To Cart</button>
+                </form>
+                <div id="toast" class="toast hidden">Item added to cart!</div>
+            </main>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
